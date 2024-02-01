@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Purple Bar -->
+<div class="purple-bar">
+        <h2>Videorenderare</h2>
+</div>
+
+<div class="container">
+        
+    <!-- Form to upload file -->
+    <form id="upload-form" asp-controller="Home" asp-action="LoadVideoFile" enctype="multipart/form-data" multiple method="post">
+        <div class="form-group">
+            <label for="excelFile">Välj en videofil att ladda upp:</label><br />
+            <input type="file" id="file" name ="file" accept=".mp4, .mkv, .mov. avi" required>
+
+                <label for="rendering"></label>
+
+                <select name="renderingOption" id="renderingOption">
+                    <option value="Parallell rendering">Parallell rendering</option>
+                    <option value="GPU-rendering">GPU-rendering</option>
+                    <option value="Normal rendering">Sekventiell rendering</option>
+                </select>
+            </div>
+
+        <button type="submit">Ladda upp</button>
+    </form>
+</div>
+
+
+</body>
+</html>
+
