@@ -1,6 +1,10 @@
 # Video Renderer
 
 # Contents
+## 1
 - Project guidelines
--Packages
+- Packages
+- External dependencies
+## 2
+- Design
 
