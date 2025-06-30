@@ -1,6 +1,5 @@
 # Video Renderer
 
-# Contents
 ## 1: Project Definition
 - Project guidelines
 - Packages
